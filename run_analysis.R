@@ -212,7 +212,7 @@ if ( "reshape2" %in% rownames(installed.packages()) )
     
     
     print("Writing the tidy data set ...")
-    write.table(mean_data,file.path(tidyDataFolder, "tidy_data.txt"))    
+    write.table(mean_data,file.path(tidyDataFolder, "tidy_data.txt"), row.names = FALSE)    
     
     
     endTime <- Sys.time()  
@@ -224,7 +224,7 @@ if ( "reshape2" %in% rownames(installed.packages()) )
     
     print("... Please Check the tidy data at following location ...")
     print(file.path(currentDir, tidyDataFolder))
-
+  
 } else {
   print("It seems some issue in installing Package 'reshape2'. Please install it manually, and re-try ...")
 }
