@@ -224,14 +224,7 @@ if ( "reshape2" %in% rownames(installed.packages()) )
     
     print("... Please Check the tidy data at following location ...")
     print(file.path(currentDir, tidyDataFolder))
-    
-    
-    
-    
-    
-    
-    
-      
+
 } else {
   print("It seems some issue in installing Package 'reshape2'. Please install it manually, and re-try ...")
 }
